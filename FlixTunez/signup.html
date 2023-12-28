@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body{
+        max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+    }
+    section {
+        background-color: black;
+    }
+    
+    img {
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+    }
+    
+    .bg-image {
+        position: relative;
+        z-index: 0;
+    }
+    
+    .content {
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+    
+    header {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }
+    
+    .logo-img {
+        width: 300px;
+        height: 200px;
+        opacity: 1;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .background {
+        height: 500px;
+        width: 400px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: .8;
+        position: relative;
+    }
+    
+    h1 {
+        margin-bottom: 10px;
+        margin-right: 175px;
+    }
+    
+    input {
+        width: 250px;
+        background-color: rgb(67, 62, 62);
+        margin-bottom: 10px;
+        height: 40px;
+        border: 0px;
+        border-radius: 3px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .btn {
+        opacity: 1;
+        width: 255px;
+        height: 30px;
+        border: 0px;
+        background: red;
+        text-align: center;
+        text-decoration: none;
+        opacity: 2;
+        border-radius: 3px;
+        margin-top: 30px;
+    }
+    
+    h5 {
+        font-weight: 200;
+        font-size: 12px;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+</style>
+
+
+<body>
+    <section class="bg-image">
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/7fb62e44-31fd-4e1f-b6ad-0b5c8c2a20ef/IN-en-20231009-popsignuptwoweeks-perspective_alpha_website_small.jpg" />
+        <div class="content">
+            <header>
+                <div class="log">
+                    <!-- <a href="./index.html"><img src="./image/logo.png" class="logo-img" alt=""></a> -->
+            </header>
+            <main>
+                <form action="./otp_page.html" class="background">
+                    <h1>Sign up</h1>
+                    <input type="text" id="email" placeholder="     Create Username" required>
+                    <input type="text" id="email" placeholder="     Email or Phone number" required>
+                    <input type="Password" id="pw" placeholder="     Password" required>
+                    <input type="Password" id="cpw" placeholder="     Confirm Password" required>
+                    <button  class="btn">Sign up</button>
+                    <h5>Do you have account? <a href="./signin.html">Sign in now</a></h5>
+                </form>
+            </main>
+            </div>
+    </section>
+</body>
+
+</html>

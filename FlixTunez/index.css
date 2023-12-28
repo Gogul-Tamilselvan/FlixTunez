@@ -1,0 +1,170 @@
+    /* header {
+        background-color: blue;
+        height: 100px;
+    } */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    section {
+        background-color: black;
+    }
+    
+    img {
+        width: 100%;
+        height: 80vh;
+        opacity: 0.5;
+    }
+    
+    .bg-image {
+        position: relative;
+        z-index: 0;
+    }
+    
+    .content {
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+    
+    header {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }
+    
+    .signin {
+        background-color: red;
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 7px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .logo-img {
+        width: 300px;
+        height: 200px;
+        opacity: 1;
+    }
+    
+    .sign-btn {
+        margin-right: 100px;
+    }
+    
+    .fade {
+        margin-top: 100px;
+        height: 1px;
+        background: rgb(71, 169, 186);
+        background: linear-gradient(90deg, rgba(71, 169, 186, 1) 0%, rgba(93, 186, 50, 1) 44%, rgba(1, 14, 17, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    }
+    
+    main {
+        margin-left: 100px;
+        margin-top: 100px;
+        display: flex;
+    }
+    
+    p {
+        width: 400px;
+    }
+    
+    main h1 {
+        margin-bottom: 6px;
+    }
+    
+    main h4 {
+        margin-bottom: 12px;
+    }
+    
+    .watch {
+        text-decoration: none;
+        background-color: red;
+        padding: 1px 9px;
+        border-radius: 3%;
+    }
+    
+ 
+    
+    .testDiv h1 {
+        margin-left: 10px;
+    }
+    
+    .thumbs {
+        width: 200px;
+        height: 100px;
+        z-index: 1;
+        opacity: 1;
+        padding: 10px;
+    }
+    .thumps:hover{
+        transform:  scale(1);
+    }
+    
+    example::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    
+    example {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .testDiv {
+        background-color: black;
+        width: 100%;
+        overflow-x: visible;
+        white-space: nowrap;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+scrollbar-color: #221e1e black; 
+    }
+    .moviecontent {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 200px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    article{
+        background-color: black;
+    }
+    #allmovieimg{
+        position: relative;
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+    } 
+    #allmovieimg:hover{
+        transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+    }
+  h1{
+    padding: 10px;
+  }
+  .movie_image{
+    width: 500px;
+    height: 300px;
+    height:auto;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    opacity: 1;
+    border-radius: 4%;
+    object-fit: cover;
+    border: 10px solid transparent; /* Create a transparent border */
+
+/* Optional: Add a box shadow for a smooth transition effect */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }

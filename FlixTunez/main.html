@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlixTunez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<style>
+    body {
+  background-color: #ffffff;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+.hover:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+    </style>
+</head>
+<body>
+<!-- 
+    --------Nav bar starts------- -->
+
+<!--Main Navigation-->
+<header>
+<!-- Sidebar -->
+<nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+<div class="position-sticky">
+  <div class="list-group list-group-flush mx-3 mt-4">
+    <a
+      href="./main.html"
+      class="list-group-item list-group-item-action py-2 ripple active"
+      aria-current="true"
+    >
+      <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Home</span>
+    </a>
+    <a href="./movies.html" class="list-group-item list-group-item-action py-2 ripple ">
+      <i class="fas fa-chart-area fa-fw me-3"></i><span>Movies</span>
+    </a>
+    <a href="./songs.html" class="list-group-item list-group-item-action py-2 ripple"
+      ><i class="fas fa-lock fa-fw me-3"></i><span>Songs</span></a
+    >
+    <a href="./signup.html" class="list-group-item list-group-item-action py-2 ripple"
+      ><i class="fas fa-chart-line fa-fw me-3"></i><span>Logout</span></a
+    >
+
+  </div>
+</div>
+</nav>
+<!-- Sidebar -->
+
+<!-- Navbar -->
+<nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top ">
+<!-- Container wrapper -->
+<div class="container-fluid">
+  <!-- Toggle button -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-mdb-toggle="collapse"
+    data-mdb-target="#sidebarMenu"
+    aria-controls="sidebarMenu"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">
+    <img
+      src="./image/logof.jpg"
+      height="60"
+      alt="MDB Logo"
+      loading="lazy"
+    />
+  </a>
+  <!-- Search form -->
+  <form class="d-none d-md-flex input-group w-auto my-auto ">
+    <input
+      autocomplete="off"
+      type="search"
+      class="form-control rounded"
+      placeholder='Search '
+      style="min-width: 225px;"
+    />
+    <span class="input-group-text border-0"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6 .1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></span>
+  </form>
+
+  <!-- Right links -->
+  <ul class="navbar-nav ms-auto d-flex flex-row">
+ 
+
+    <!-- Avatar -->
+    <li class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
+        href="#"
+        id="navbarDropdownMenuLink"
+        role="button"
+        data-mdb-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <img
+          src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png"
+          class="rounded-circle"
+          height="40"
+          alt="Avatar"
+          loading="lazy"
+        />
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<!-- <main style="margin-top: 58px;">
+<div class="container pt-5 m-4">
+    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 10rem;">
+        <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2GbnbB-default.jpg" class="card-img-top" alt="...">
+      </div>
+</div> -->
+<div style="margin-top: 80px; margin-left: 260px;">
+<label for=""><strong style="font-size: larger; position: fixed;">Trending Now</strong></label>
+</div>
+<div class=" container pt-5 ml-10 row row-cols-1 row-cols-md-5 g-3" style=" margin-left: 240px;">
+<!-- tamil movies -->
+<div class="col">
+  <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+    <a href=""><img src="https://m.media-amazon.com/images/M/MV5BNDA5YzlhNjItMDgxNC00MjQ4LWIzMDMtYTUyMzBhNjViNDk3XkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg" class="card-img-top" alt="..."></a>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+    <a href=""><img src="https://m.media-amazon.com/images/M/MV5BYjIwMDkwNDUtZTE4My00Y2U0LTg1ZTMtNjcyYWEyZDRlNTQxXkEyXkFqcGdeQXVyMTI4Mjk4MDc4._V1_.jpg" class="card-img-top" alt="..."></a>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+    <a href=""><img src="https://m.media-amazon.com/images/M/MV5BMmFlOTQ0ZTktMzhmZC00MTE3LWFiMGYtYzcxNDk5YjUwNTMxXkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_.jpg" class="card-img-top" alt="..."></a>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+    <a href=""><img src="https://m.media-amazon.com/images/M/MV5BMzA2ZTgxNzgtYjM3Ni00NTI1LWJiMjAtMWViNWUzNzIwYTgwXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_.jpg" class="card-img-top" alt="..."></a>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+    <a href=""><img src="https://m.media-amazon.com/images/M/MV5BM2RkNWZjYTctNGNjNC00ODU3LWE4OWUtZGQ0NzFjZDg2OGM4XkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg" class="card-img-top" alt="..."></a>
+  </div>
+</div>
+
+
+<!-- songs -->
+    <div class="col" >
+      <div class=" card h-80 shadow p-1 mb-6 bg-white rounded hover "  >
+        <a href=""  ><img  src="https://i.scdn.co/image/ab67616d00001e02ed183806f8afe25dcb17e0cd"  class="card-img-top" alt="..."></a>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover" >
+          <a href=""><img src="https://i.scdn.co/image/ab67616d00001e026ef404daec4fe510bdc2c4e7" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://i.scdn.co/image/ab67706f000000029b6b827913a29a7aee530f05" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://i.scdn.co/image/ab67706f0000000222577b3db1e8be5cb4a9c550" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://i.scdn.co/image/ab67706f00000002f19e271ac27f3ce875d5aad3" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BMTdmZDNhNjgtMjk4NS00YzQzLTliM2UtMDEzZDY2MDZmMTcwXkEyXkFqcGdeQXVyMTA4MzgzNDM3._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BODAyYjIzZDEtMjFkMy00OGE2LWEzODItYmE4NjhkNzYxNmRjXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BMTkxM2FiYjctYjliYy00NjY2LWFmOTEtMWZiYWRjNjA4MGYxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BYWMyYWI0M2MtZDk2My00MmFmLWEzZTgtYjIxZjMyODcwNGJjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BMTUzM2I3NDEtMjNhYi00NTQ0LThmZDItZTMyMzM2MjJmZGRjXkEyXkFqcGdeQXVyMTU3NDU4MDg2._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      
+      
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-90 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BZWIzNDAxMTktMDMzZS00ZjJmLTlhNjYtOGUxYmZlYzVmOGE4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BM2UzOTM3NzItNmUwMi00OTY0LThjMTEtYTkwY2RiNTBlYWJiXkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BMjZkNTdhOTMtYzg0Yy00YjA4LTljOTQtZWRkNTZkMTY3Y2Y3XkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-80 shadow p-1 mb-6 bg-white rounded hover">
+          <a href=""><img src="https://m.media-amazon.com/images/M/MV5BOTVmMjI5ODgtNjk4MC00OTNlLWEyYzAtZDk5ODNmZThjYWNhXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_.jpg" class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      </div>
+  </div>
+</main>
+<!--Main layout-->
+
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

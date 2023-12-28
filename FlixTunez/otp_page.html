@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+<style>
+    /* header {
+        background-color: blue;
+        height: 100px;
+    } */
+    
+    * {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+    }
+    
+    section {
+        background-color: black;
+    }
+    
+    img {
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+    }
+    
+    .bg-image {
+        position: relative;
+        z-index: 0;
+    }
+    
+    .content {
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+    
+    header {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+    }
+    
+    .logo-img {
+        width: 300px;
+        height: 200px;
+        opacity: 1;
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .background {
+        height: 400px;
+        width: 380px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: .8;
+        position: relative;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    
+    /* h1 {
+        margin-bottom: 100px;
+       
+    } */
+    
+    input {
+        width: 250px;
+        background-color: rgb(67, 62, 62);
+        height: 40px;
+        border: 0px;
+        border-radius: 3px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .btn {
+        opacity: 1;
+        width: 255px;
+        height: 30px;
+        border: 0px;
+        background: rgb(74, 226, 234);
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        opacity: 2;
+        border-radius: 3px;
+        margin-top: 30px;
+    }
+    
+    h5 {
+        font-weight: 200;
+        font-size: 12px;
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    h5{
+width: 250px;
+text-align: center;
+margin-bottom: 40px;
+    }
+</style>
+
+<body>
+    <section class="bg-image">
+        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/7fb62e44-31fd-4e1f-b6ad-0b5c8c2a20ef/IN-en-20231009-popsignuptwoweeks-perspective_alpha_website_small.jpg" />
+        <div class="content">
+            <header>
+                <!-- <div class="log">
+                    <a href="./index.html"><img src="./image/logo.png" class="logo-img" alt=""></a>
+                </div> -->
+            </header>
+            <main>
+                    <form action="./main.html" class="background">
+                    <h1>OTP Verification</h1>
+                    <h5>We have sent a verfication code to your registered mobile number.</h5>
+                    <input type="text" placeholder="     Enter your One Time Password" required>
+                    <button class="btn" onclick="logincredn()">Submit</button>
+                    <h5><a href="./otp_page.html">Resend OTP </a></h5>
+                </form>
+            </main>
+            </div>
+    </section>
+    <script>
+function logincredn(){
+    localStorage.setItem('isLoggedIn', 'true');
+}
+    </script>
+</body>
+
+</html>
